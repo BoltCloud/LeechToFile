@@ -26,7 +26,7 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3600
     #
     ARIA_TWO_STARTED_PORT = int(os.environ.get("ARIA_TWO_STARTED_PORT", 6800))
-    EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", 15))
+    EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", 5))
     MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(os.environ.get("MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START", 600))
     MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", 1072864000))
     # add config vars for the display progress
@@ -47,4 +47,4 @@ class Config(object):
     SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumb@LeexhBot")
     CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumb@LeexhBot")
     CLEAR_UNDELETED = os.environ.get("CLEAR_UNDELETED", "clearall")
-    LOG_COMMAND = os.environ.get("LOG_COMMAND", "getlog") 
+    LOG_COMMAND = os.environ.get("LOG_COMMAND", "nolog") 
